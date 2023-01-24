@@ -1,0 +1,15 @@
+body {
+    display:flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.header,
+.description,
+.footer {
+    background-color: #1f2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
