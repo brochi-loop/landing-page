@@ -8,9 +8,57 @@ body {
 .description,
 .footer {
     background-color: #1f2937;
-    /*ggg*/
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 .quote {
     background-color: #e5e7eb;
+}
+
+li,
+.description-text, 
+.item .subtext,
+.footer,
+.card-description {
+    list-style: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.description-title {
+    font-size: 48px;
+    font-weight:bolder;
+    color: #f9faf8;
+}
+
+.random-info .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.quote-author {
+    font-size: 24px;
+    color: #1f2937;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
 }
