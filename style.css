@@ -2,6 +2,7 @@ body {
     display:flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 .header,
@@ -11,7 +12,16 @@ body {
     
 }
 
+.header {
+    padding: 20px 0 50px;
+}
+
+.description {
+    height: 250px;
+}
+
 .logo {
+    flex: auto;
     font-size: 24px;
     color: #f9faf8;
 }
@@ -22,7 +32,7 @@ body {
 
 li,
 .description-text, 
-.item .subtext,
+.item,
 .footer,
 .card-description {
     list-style: none;
@@ -30,16 +40,41 @@ li,
     color: #e5e7eb;
 }
 
+.subtext {
+    color:gray;
+    text-align: center;
+    width: 150px;
+}
+
 .description-title {
     font-size: 48px;
     font-weight:bolder;
     color: #f9faf8;
+    margin-bottom: 10px;
 }
 
+.description-text {
+    margin-bottom: 8px;
+}
+
+.gallery {
+    width: 1120px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.illustration{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
 .random-info .title {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    margin-bottom: 10px;
+    
 }
 
 .quote-text {
@@ -59,6 +94,103 @@ li,
     color: #e5e7eb;
 }
 
+.sign-up .card{
+    width: 1120px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    background-color: #3882f6
+}
+
+
 button {
     background-color: #3882f6;
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: 1px solid #3882f6;
+    color: #e5e7eb;
+    
 }
+
+/*seccion de flexbox*/
+
+.description,
+.gallery,
+.random-info,
+.quote,
+.sign-up,
+.header {
+    display: flex;
+}
+ul{
+    display: flex;
+    margin: 0;
+    gap: 15px;
+}
+
+
+.container {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.description .container {
+    width: 1120px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.random-info,
+.quote {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+ 
+.quote-container {
+    width: 900px;
+}
+
+.description,
+.sign-up,
+.header {
+    justify-content: center;
+    align-items: center;
+}
+.sign-up {
+    padding: 50px 0;
+}
+.button-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    display: flex;
+    flex: 2 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    border: 1px solid white;
+}
+
+.quote-author{
+    text-align: right;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
